@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us</title>
+  <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+  <style>
+    body {
+      background-color:  #4d93da49;
+      font-family: Arial, sans-serif;
+    }
+     
+    /* Section Styling */
+    .section-padding {
+      padding: 60px 0;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: rgba(39, 36, 36, 0.89); /* White text for titles */
+      margin-bottom: 40px;
+    }
+
+    /* Background Color for each Section */
+    .history {
+      background-color:  #32c2976b; /* Blue Background */
+      color: black;
+    }
+
+    .core-value {
+      background-color: #2ecc71; /* Green Background */
+      color: #302d2d;
+    }
+
+    .philosophy {
+      background-color: #e74c3c; /* Red Background */
+      color: #fff;
+    }
+
+    .mission {
+      background-color: #f39c12; /* Yellow Background */
+      color: #fff;
+    }
+
+    .vision {
+      background-color: #f39c12; /* Yellow Background */
+      color: #fff;
+      border-radius: 8px;
+      border-radius: 8px;
+    
+    
+    }
+
+    /* Card/Box Shadow Effects */
+    .section-card {
+      background:  #32c2976b;
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 4px 8px rgba(218, 22, 22, 0.1);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .section-card:hover {
+      box-shadow: 0 8px 16px rgba(39, 204, 113, 0.24);
+    }
+
+    /* Typography Styling */
+    .section-content {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: black; /* Ensure content text is also white */
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+
+    /* Responsive Media Query */
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Small Business Corporate Website</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="signin.html">Sign Up</a></li>
+          <li class="nav-item"><a class="nav-link" href="product.html">product</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Content -->
+  <div class="container section-padding">
+    <!-- History Section -->
+    <div class="history section-card">
+      <h2 class="text-center section-title">HISTORY</h2>
+      <p class="section-content">Our company is committed to delivering affordable and high-quality services that enhance everyday life, making a positive impact on our customers and the community we serve.</p>
+    </div>
+
+    <!-- Core Values Section -->
+    <div class="core-value section-card mt-4">
+      <h2 class="text-center section-title">CORE VALUE</h2>
+      <p class="section-content">Our core values include integrity, putting customers first, driving innovation, fostering teamwork, and embracing sustainability, guiding everything we do and every decision we make.</p>
+    </div>
+
+    <!-- Philosophy Section -->
+    <div class="philosophy section-card mt-4">
+      <h2 class="text-center section-title">PHILOSOPHY</h2>
+      <p class="section-content">We build lasting relationships with customers by consistently exceeding expectations. Our philosophy is rooted in creating positive impacts through innovation, customer service, and sustainability.</p>
+    </div>
+
+    <!-- Mission Section -->
+    <div class="mission section-card mt-4">
+      <h2 class="text-center section-title">MISSION</h2>
+      <p class="section-content">Our mission is to provide services that enhance everyday life, deliver personalized, innovative solutions, and create lasting value for our customers, employees, and communities.</p>
+    </div>
+ 
+
+   <!-- VISSION Section -->
+   <div class="vision section-card mt-4">
+    <h2 class="text-center section-title">VISION</h2>
+    <p class="section-content">Our vision is to empower local communities by providing high-quality, eco-friendly products that make everyday living more sustainable and joyful.</p>
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <p>&copy; 2025 Small Business. All rights reserved.</p>
+  </footer>
+
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

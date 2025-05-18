@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>product</title>
+  <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+  <style>
+    body {
+      background-color: #4d93da49;
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
+      background-color: #fdfdfd;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-img-top {
+      height: 250px;
+      object-fit: contain;
+      background-color: white;
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card-title {
+      color: #2c3e50;
+      font-weight: 600;
+    }
+
+    .card-text {
+      font-size: 1.1rem;
+      color: #28a745;
+      margin-bottom: 1rem;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+      transition: background-color 0.3s;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 2rem;
+      }
+    }
+
+    /* Modal Custom Design */
+    .modal-dialog {
+      max-width: 400px;
+    }
+
+    .modal-content {
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+      border: none;
+      padding: 15px;
+    }
+
+    .modal-header {
+      background-color: #007bff;
+      color: white;
+      border-bottom: none;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .modal-footer {
+      border-top: none;
+    }
+
+    .form-label {
+      font-weight: bold;
+    }
+
+    .form-control,
+    .form-select {
+      border-radius: 8px;
+      box-shadow: none;
+      border: 1px solid #ccc;
+    }
+
+    .btn-success {
+      background-color: #28a745;
+      border: none;
+    }
+
+    .btn-success:hover {
+      background-color: #218838;
+    }
+
+    .btn-secondary {
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Small Business Corporate Website</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="signin.html">Sign Up</a></li>
+          <li class="nav-item"><a class="nav-link" href="product.html">product</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <h2 class="text-center section-title">Our Products</h2>
+    <div class="row text-center">
+      <!-- Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="New folder/sunscreenn.avif" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <h5 class="card-title">Sunscreen</h5>
+            <p class="card-text">₱499.00</p>
+            <button class="btn btn-primary buy-now-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#buyNowModal"
+                    data-product="Sunscreen"
+                    data-price="₱499.00"
+                    data-image="New folder/sunscreenn.avif">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="New folder/moisturizer.avif" class="card-img-top" alt="Product 2">
+          <div class="card-body">
+            <h5 class="card-title">Moisturizer</h5>
+            <p class="card-text">₱599.00</p>
+            <button class="btn btn-primary buy-now-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#buyNowModal"
+                    data-product="Moisturizer"
+                    data-price="₱599.00"
+                    data-image="New folder/moisturizer.avif">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="New folder/facial cleeanser.avif" class="card-img-top" alt="Product 3">
+          <div class="card-body">
+            <h5 class="card-title">Facial Cleanser</h5>
+            <p class="card-text">₱99.00</p>
+            <button class="btn btn-primary buy-now-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#buyNowModal"
+                    data-product="Facial Cleanser"
+                    data-price="₱99.00"
+                    data-image="New folder/facial cleeanser.avif">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Buy Now Modal -->
+  <div class="modal fade" id="buyNowModal" tabindex="-1" aria-labelledby="buyNowModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form id="orderForm">
+          <div class="modal-header">
+            <h5 class="modal-title" id="buyNowModalLabel">Complete Your Purchase</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body text-center">
+            <img id="modalProductImage" src="" alt="Product Image" class="img-fluid mb-3" style="max-height: 200px;">
+            <p><strong>Product:</strong> <span id="modalProductName"></span></p>
+            <p><strong>Price:</strong> <span id="modalProductPrice"></span></p>
+
+            <div class="mb-3 text-start">
+              <label for="fullName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="fullName" required>
+            </div>
+            <div class="mb-3 text-start">
+              <label for="shippingAddress" class="form-label">Shipping Address</label>
+              <textarea class="form-control" id="shippingAddress" rows="2" required></textarea>
+            </div>
+            <div class="mb-3 text-start">
+              <label for="paymentMethod" class="form-label">Payment Method</label>
+              <select class="form-select" id="paymentMethod" required>
+                <option value="">Select</option>
+                <option value="gcash">GCash</option>
+                <option value="cod">Cash on Delivery</option>
+                <option value="bank">Bank Transfer</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-success">Place Order</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-4">
+    <p>&copy; 2025 Doe & Co. Solutions. All rights reserved.</p>
+  </footer>
+
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const buyNowButtons = document.querySelectorAll('.buy-now-btn');
+    const productNameSpan = document.getElementById('modalProductName');
+    const productPriceSpan = document.getElementById('modalProductPrice');
+    const productImage = document.getElementById('modalProductImage');
+    const form = document.getElementById('orderForm');
+
+    buyNowButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const productName = button.getAttribute('data-product');
+        const productPrice = button.getAttribute('data-price');
+        const productImg = button.getAttribute('data-image');
+
+        productNameSpan.textContent = productName;
+        productPriceSpan.textContent = productPrice;
+        productImage.src = productImg;
+      });
+    });
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('fullName').value.trim();
+      const address = document.getElementById('shippingAddress').value.trim();
+      const payment = document.getElementById('paymentMethod').value;
+
+      if (name && address && payment) {
+        const modal = bootstrap.Modal.getInstance(document.getElementById('buyNowModal'));
+        modal.hide();
+
+        setTimeout(() => {
+          alert(`🎉 Order placed successfully!\n\nThank you, ${name}, for purchasing ${productNameSpan.textContent}.\nYour order will be shipped to: ${address}`);
+          form.reset();
+        }, 300);
+      } else {
+        alert("❗ Please fill out all the fields.");
+      }
+    });
+  </script>
+</body>
+</html>
